@@ -5,9 +5,11 @@
 Start [`notebooks/ConnectorSIGMOD.ipynb`](notebooks/ConnectorSIGMOD.ipynb) to run the experiment
 and generate the figures. You might need to register API keys for each website.
 
-## Generator (Sec 4.1)
+## Demonstration of Generator (Sec 4.1)
 
-Run [`notebooks/Generator.ipynb`](notebooks/Generator.ipynb) to open the generator UI.
+The following demo is 1m30s long.
+
+![Demo](ConnectorX%20SIGMOD.gif)
 
 # Repo Structure
 

@@ -39,7 +39,9 @@ class ConfigGenerator:
             self.config = ConfigState(ConfigDef(**config))
         self.storage = {}
 
-    def add_example(self, example: Dict[str, Any]) -> None:  # pylint: disable=too-many-locals
+    def add_example(
+        self, example: Dict[str, Any]
+    ) -> None:  # pylint: disable=too-many-locals
         """Add an example to the generator. The example
         should be in the dictionary format.
 
@@ -102,6 +104,8 @@ class ConfigGenerator:
         if pagination is not None:
             pagdef = PageUnion(val=pagination).val
             config.request.pagination = pagdef
+        if authdef is not None:
+            config.request.authorization = authdef
 
         self.config += config
 

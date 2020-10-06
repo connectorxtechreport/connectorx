@@ -213,7 +213,9 @@ class ConfigGeneratorUI:  # pylint: disable=too-many-instance-attributes
             file.write(self.config.value)
             file.close()
             with saved_tooltip:
-                print("Saved to %s callback removed %s!" % (self.save_file_name, remove))
+                print(
+                    "Saved to %s callback removed %s!" % (self.save_file_name, remove)
+                )
 
         self.config = Textarea(
             value="",
@@ -223,7 +225,9 @@ class ConfigGeneratorUI:  # pylint: disable=too-many-instance-attributes
             layout=self.smalltextarea_layout,
         )
 
-        save_button = Button(description="Save Config", layout=Layout(width="15%", height="35px"))
+        save_button = Button(
+            description="Save Config", layout=Layout(width="15%", height="35px")
+        )
         save_button.style.button_color = "lightblue"
         save_button.style.font_weight = "740"
         save_button.on_click(on_button_clicked)
@@ -294,6 +298,7 @@ class ConfigGeneratorUI:  # pylint: disable=too-many-instance-attributes
             else:
                 sub_authparams[key] = value
         sub_authparams["type"] = self.authtype_box.value
+
         self.dict_res = {
             "url": self.url_area.value,
             "method": self.request_type.value,
