@@ -1,5 +1,16 @@
 # ConnectorX: A Unified API Wrapper to Simplify Web DataCollection
 
+## Library Demo
+
+A unified way to get data into a DataFrame from different website.
+![](connector_main.gif)
+
+Concurrently fetching multiple pages.
+![](connector_concurrency.gif)
+
+Automatic pagination.
+![](connector_pagination.gif)
+
 ## Reproduce Figure 6 and 7
 
 Start [`notebooks/ConnectorSIGMOD.ipynb`](notebooks/ConnectorSIGMOD.ipynb) to run the experiment
