@@ -13,7 +13,7 @@ Automatic pagination.
 
 ## Reproduce Figure 6 and 7
 
-Start [`notebooks/ConnectorSIGMOD.ipynb`](notebooks/ConnectorSIGMOD.ipynb) to run the experiment
+Start [`notebooks/ConnectorSIGMOD.ipynb`](https://nbviewer.jupyter.org/github/connectorxtechreport/connectorx/blob/master/notebooks/ConnectorSIGMOD.ipynb) to run the experiment
 and generate the figures. You might need to register API keys for each website.
 
 ## Demonstration of Generator (Sec 4.1)
